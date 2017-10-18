@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/src-d/berserker/enrysrv"
+	"github.com/newsiberian/enrysrv"
 
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
@@ -13,7 +13,7 @@ import (
 type serverCmd struct {
 	commonCmd
 	Address      string `short:"a" long:"address" description:"server address to bind to" default:"0.0.0.0:9091"`
-	Profiler     bool   `long:"profiler" description:"start CPU & memeory profiler"`
+	Profiler     bool   `long:"profiler" description:"start CPU & memory profiler"`
 	ProfilerAddr string `long:"profiler-addr" description:"profiler address" default:"localhost:6073"`
 }
 

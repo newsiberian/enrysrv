@@ -4,7 +4,7 @@ import (
 	"context"
 	"io/ioutil"
 
-	"github.com/src-d/berserker/enrysrv"
+	"github.com/newsiberian/enrysrv"
 
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"

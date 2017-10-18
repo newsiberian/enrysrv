@@ -6,7 +6,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-//go:generate proteus -f proto -p github.com/src-d/berserker/enrysrv --verbose
+//go:generate proteus -f proto -p github.com/newsiberian/enrysrv --verbose
 
 // proteus:generate
 type EnryRequest struct {

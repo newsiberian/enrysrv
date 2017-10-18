@@ -37,3 +37,4 @@ coverage.txt
 bin/
 build/
 
+glide.lock

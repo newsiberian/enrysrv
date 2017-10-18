@@ -1,5 +1,5 @@
 syntax = "proto3";
-package github.com.srcd.berserker.enrysrv;
+package github.com.newsiberian.enrysrv;
 
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
@@ -20,7 +20,7 @@ message EnryResponse {
 	option (gogoproto.goproto_getters) = false;
 	option (gogoproto.typedecl) = false;
 	string language = 1;
-	github.com.srcd.berserker.enrysrv.Status status = 2;
+	github.com.newsiberian.enrysrv.Status status = 2;
 }
 
 // Status is the status of a response.
@@ -39,6 +39,6 @@ enum Status {
 }
 
 service EnrysrvService {
-	rpc GetLanguage (github.com.srcd.berserker.enrysrv.EnryRequest) returns (github.com.srcd.berserker.enrysrv.EnryResponse);
+	rpc GetLanguage (github.com.newsiberian.enrysrv.EnryRequest) returns (github.com.newsiberian.enrysrv.EnryResponse);
 }
 

@@ -1,8 +1,8 @@
-hash: 8d5ed1765da983241d89340fbed53c0c4aae7f1280ea8444b1ca8447620be7f2
-updated: 2017-07-27T12:34:44.613827941+02:00
+hash: 314637636cf63029443cd3a4e95234fadd2c805f287491da9e0b69001fac9a07
+updated: 2017-10-18T12:40:36.688416877+07:00
 imports:
 - name: github.com/gogo/protobuf
-  version: 100ba4e885062801d56799d78530b73b178a78f3
+  version: 342cbe0a04158f6dcb03ca0079991a51a4248c02
   subpackages:
   - gogoproto
   - proto
@@ -11,15 +11,22 @@ imports:
   version: 748d386b5c1ea99658fd69fe9f03991ce86a90c1
   subpackages:
   - proto
+  - ptypes
   - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
 - name: github.com/jessevdk/go-flags
   version: 96dc06278ce32a0e9d957d590bb987c81ee66407
 - name: github.com/pkg/errors
   version: c605e284fe17294bda444b34710735b29d1a9d90
 - name: github.com/sirupsen/logrus
-  version: a3f95b5c423586578a4e099b11a46c2479628cac
+  version: f006c2ac4710855cf0f916dd6b77acf6b048dc6e
 - name: github.com/toqueteos/trie
   version: 56fed4a05683322f125e2d78ee269bb102280392
+- name: golang.org/x/crypto
+  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
+  subpackages:
+  - ssh/terminal
 - name: golang.org/x/net
   version: f5079bd7f6f74e23c4d65efa0f4ce14cbd6a3c0f
   subpackages:
@@ -34,6 +41,7 @@ imports:
   version: 02a66801d979d706a4b445e24e03916eeaa2a404
   subpackages:
   - unix
+  - windows
 - name: golang.org/x/text
   version: 836efe42bb4aa16aaa17b9c155d8813d336ed720
   subpackages:
@@ -46,23 +54,26 @@ imports:
   subpackages:
   - googleapis/rpc/status
 - name: google.golang.org/grpc
-  version: 172ccacff3cfbddedcf1ba5ea06cda943bc976c1
+  version: f7bf885db0b7479a537ec317c6e48ce53145f3db
   subpackages:
+  - balancer
   - codes
+  - connectivity
   - credentials
-  - grpclb/grpc_lb_v1
+  - grpclb/grpc_lb_v1/messages
   - grpclog
   - internal
   - keepalive
   - metadata
   - naming
   - peer
+  - resolver
   - stats
   - status
   - tap
   - transport
 - name: gopkg.in/src-d/enry.v1
-  version: dbc4115830cce722249ef8c1ccaa2d477808a02b
+  version: c2ec7add0311e11f1f04c63df1ed7873c6e54ddb
   subpackages:
   - data
   - internal/tokenizer
